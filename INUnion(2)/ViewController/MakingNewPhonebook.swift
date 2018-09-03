@@ -27,7 +27,7 @@ class MakingNewPhonebook: UIViewController{
     @IBOutlet weak var numberTextfield: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
-    @IBOutlet weak var memoTextField: UITextField!
+    @IBOutlet weak var memoTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,8 +44,8 @@ class MakingNewPhonebook: UIViewController{
         locationTextField.placeholder = "위치"
         locationTextField.underlined()
         
-        memoTextField.underlined()
-        memoTextField.placeholder = "내용을 적어주세요"
+        memoTextView.layer.borderWidth = 0.4
+        memoTextView.layer.borderColor = UIColor.black.cgColor
     }
     
     override func didReceiveMemoryWarning() {
